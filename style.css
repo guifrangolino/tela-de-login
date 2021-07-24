@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    40% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-2.5px);
+        transform: translateY(-2.5px);
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgb(37, 37, 37), rgb(20, 20, 20));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.conteudo {
+    background-color: rgb(165, 165, 165);
+    box-shadow: 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+}
+
+main h2 {
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* .campo-de-entrada {
+    border: solid 1px red;
+    position: relative;
+} */
+
+.campo-de-entrada input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.1em;
+    padding: 10px 0;
+}
+
+.campo-de-entrada .underline {
+    content: '';
+    /* position: absolute; */
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.campo-de-entrada .underline::after {
+    
+}
+
+.campo-de-entrada input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type='submit'] {
+    margin-top: 16px;
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: rgb(143, 143, 143);
+    box-shadow: 3px 3px black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer .campo-social {
+    padding: 7px;
+    font-size: 0.9rem;
+    /* cursor: pointer; */
+    width: 100%;
+    
+}
+
+.footer .campo-social a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .campo-social a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .campo-social.twitter {
+    background-color: #56a7f2;
+    box-shadow: 3px 3px black;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    /* align-content: center; */
+    /* align-items: center; */
+}
+
+.footer .campo-social.facebook {
+    background-color: #1e3c72;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bounce:hover {
+    animation: bounce 1.5s;
+}
